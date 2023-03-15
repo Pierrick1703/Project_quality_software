@@ -4,7 +4,10 @@ module com.example.quality_software_rendu {
 
     requires org.controlsfx.controls;
     requires com.dlsc.formsfx;
+    requires org.testng;
 
-    opens com.example.quality_software_rendu to javafx.fxml;
-    exports com.example.quality_software_rendu;
+    exports fr;
+    exports Controller;
+    opens Controller to javafx.fxml;
+    opens fr to javafx.fxml;
 }
