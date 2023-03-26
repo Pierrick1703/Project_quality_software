@@ -16,8 +16,8 @@ public class SaisiChiffre {
     @FXML private Label errorLabel;
     @FXML protected void onCalculButtonClick(){
         try{
-            StartApplication.m.testValeur(Integer.parseInt(numberLabel1.getText()),Integer.parseInt(numberLabel2.getText()));
-            StartApplication.m.calculNombreParfait(Integer.parseInt(numberLabel1.getText()),Integer.parseInt(numberLabel2.getText()));
+            StartApplication.m.testValeur(numberLabel1.getText(),numberLabel2.getText());
+            StartApplication.m.calculNombreParfait(numberLabel1.getText(),numberLabel2.getText());
             errorLabel.setText("");
             FXMLLoader fxmlLoader = new FXMLLoader(StartApplication.class.getResource("ResultView.fxml"));
             Scene scene = new Scene(fxmlLoader.load());

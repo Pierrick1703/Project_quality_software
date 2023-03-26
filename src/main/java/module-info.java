@@ -5,6 +5,8 @@ module com.example.quality_software_rendu {
     requires org.controlsfx.controls;
     requires com.dlsc.formsfx;
     requires org.testng;
+    requires junit;
+    requires org.junit.jupiter.api;
 
     exports fr;
     exports Controller;
